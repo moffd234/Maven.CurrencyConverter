@@ -29,7 +29,8 @@ public enum CurrencyType {
     public static CurrencyType getTypeOfCurrency(ConvertableCurrency currency) {
         if (currency instanceof AustralianDollar) {
             return AUSTRALIAN_DOLLAR;
-        } else if (currency instanceof CanadianDollar) {
+        }
+        if (currency instanceof CanadianDollar) {
             return CANADIAN_DOLLAR;
         } else if (currency instanceof ChineseYR) {
             return CHINESE_YR;
